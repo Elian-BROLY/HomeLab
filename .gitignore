@@ -1,0 +1,21 @@
+# Environnement et secrets
+.env
+*.env
+*.pem
+*.key
+*.crt
+
+# Fichiers de données et bases de données
+*.sqlite
+*.db
+data/
+volumes/
+
+# Logs et OS
+*.log
+.DS_Store
+Thumbs.db
+
+# Clés SSH / Certificats
+id_rsa
+id_ed25519

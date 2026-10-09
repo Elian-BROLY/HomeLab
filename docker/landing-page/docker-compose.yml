@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    image: 'nginx:alpine'
+    container_name: landing-page
+    restart: unless-stopped
+    ports:
+      - '3000:80'
+    volumes:
+      - .:/usr/share/nginx/html
