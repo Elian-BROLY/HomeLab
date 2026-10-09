@@ -1,4 +1,4 @@
-#Personal Homelab Architecture & Services
+# Personal Homelab Architecture & Services
 
 Bienvenue sur la documentation de mon infrastructure personnelle hébergée à la maison.
 
