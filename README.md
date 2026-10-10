@@ -1,48 +1,48 @@
 # Personal Homelab Architecture & Services
 
-Bienvenue sur le dépôt de mon infrastructure personnelle hébergée sur mon serveur Homelab.
+Welcome to the repository of my personal infrastructure hosted on my Homelab server.
 
 ---
 
-## 🌐 Dashboard Centralisé
+## 🌐 Centralized Dashboard
 
-L'ensemble des services de mon infrastructure est accessible et supervisé en temps réel depuis mon tableau de bord **Homepage** :
-* **URL Dashboard** : `https://dashboard.ebroly.fr` (accès restreint via Nginx Proxy Manager Access Lists)
+All services across my infrastructure are accessible and monitored in real time from my **Homepage** dashboard:
+* **Dashboard URL**: `https://dashboard.ebroly.fr` (access restricted via Nginx Proxy Manager Access Lists)
 
 ---
 
 ## 🛠️ Stack & Infrastructure
 
-- **OS Serveur** : Ubuntu Server LTS
-- **Reverse Proxy** : Nginx Proxy Manager (Certificats Let's Encrypt Wildcard `*.ebroly.fr`, HTTPS & Access Lists)
-- **Conteneurisation** : Docker & Docker Compose
-- **Supervision & Métriques** : Netdata & Uptime Kuma
+- **Server OS**: Ubuntu Server LTS
+- **Reverse Proxy**: Nginx Proxy Manager (Let's Encrypt Wildcard Certificates `*.ebroly.fr`, HTTPS & Access Lists)
+- **Containerization**: Docker & Docker Compose
+- **Monitoring & Metrics**: Netdata & Uptime Kuma
 
 ---
 
-## 📋 Services Hébergés
+## 📋 Hosted Services
 
-| Catégorie | Service | Description | Sous-domaine / URL | Techno |
+| Category | Service | Description | Subdomain / URL | Tech Stack |
 | :--- | :--- | :--- | :--- | :--- |
-| **Dashboard** | **Homepage** | Hub centralisé & métriques en direct | `dashboard.ebroly.fr` | Node.js / React |
-| **Supervision** | **Netdata** | Métriques système (CPU, RAM, Disque) en temps réel | `netdata.ebroly.fr` | Netdata |
-| **Supervision** | **Uptime Kuma** | Monitoring de disponibilité des services | `status.ebroly.fr` | Uptime Kuma |
-| **Administration** | **Portainer** | Interface Web de gestion des conteneurs Docker | `docker.ebroly.fr` | Portainer CE |
-| **Réseau & DNS** | **AdGuard Home** | Bloqueur de publicités réseau & serveur DNS local | `dns.ebroly.fr` | AdGuard Home |
-| **Proxy** | **Nginx Proxy Manager** | Gestion du routage et des certificats SSL | `npm.ebroly.fr` | Nginx Proxy Manager |
-| **Sécurité** | **Vaultwarden** | Gestionnaire de mots de passe chiffré | `vault.ebroly.fr` | Vaultwarden (Rust Bitwarden) |
-| **Stockage** | **Nextcloud** | Cloud privé & synchronisation de fichiers | `cloud.ebroly.fr` | Nextcloud / MySQL |
-| **Web** | **Landing Page** | Portail d'accueil & redirection | `ebroly.fr` | Nginx / HTML / CSS |
-| **Web** | **Portfolio** | Site web personnel & backend de contact | `portfolio.ebroly.fr` | Nginx / Node.js Express |
-| **Web** | **BTS TP Site** | Projet / TP BTS CIEL | `bts.ebroly.fr` | PHP 8.2 / MySQL 8.0 |
-| **Web** | **Love Project** | Mini-projet web | `love.ebroly.fr` | Nginx Alpine |
-| **Gaming** | **Serveur Minecraft** | Serveur de jeu multijoueur | `mc.ebroly.fr` | PaperMC 26.3 / Java |
+| **Dashboard** | **Homepage** | Central hub & real-time metrics | `dashboard.ebroly.fr` | Node.js / React |
+| **Monitoring** | **Netdata** | Real-time system metrics (CPU, RAM, Disk) | `netdata.ebroly.fr` | Netdata |
+| **Monitoring** | **Uptime Kuma** | Service uptime & availability monitoring | `status.ebroly.fr` | Uptime Kuma |
+| **Administration** | **Portainer** | Web UI for Docker container management | `docker.ebroly.fr` | Portainer CE |
+| **Network & DNS** | **AdGuard Home** | Network-wide ad blocker & local DNS server | `dns.ebroly.fr` | AdGuard Home |
+| **Proxy** | **Nginx Proxy Manager** | Traffic routing & SSL certificate management | `npm.ebroly.fr` | Nginx Proxy Manager |
+| **Security** | **Vaultwarden** | Lightweight encrypted password manager | `vault.ebroly.fr` | Vaultwarden (Rust Bitwarden) |
+| **Storage** | **Nextcloud** | Private cloud & file synchronization | `cloud.ebroly.fr` | Nextcloud / MySQL |
+| **Web** | **Landing Page** | Main portal & links hub | `ebroly.fr` | Nginx / HTML / CSS |
+| **Web** | **Portfolio** | Personal showcase website & contact backend | `portfolio.ebroly.fr` | Nginx / Node.js Express |
+| **Web** | **BTS TP Site** | Academic project / BTS CIEL coursework | `bts.ebroly.fr` | PHP 8.2 / MySQL 8.0 |
+| **Web** | **Love Project** | Web mini-project | `love.ebroly.fr` | Nginx Alpine |
+| **Gaming** | **Minecraft Server** | Multiplayer game server | `mc.ebroly.fr` | PaperMC 26.3 / Java |
 
 ---
 
-## 📂 Organisation du Dépôt
+## 📂 Repository Structure
 
-Tous les fichiers de déploiement `docker-compose.yml` sont organisés par service sous le dossier `/docker` :
+All `docker-compose.yml` deployment files are organized by service under the `/docker` directory:
 
 ```text
 homelab/
