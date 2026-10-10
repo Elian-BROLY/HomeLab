@@ -6,18 +6,16 @@ Bienvenue sur le dépôt de mon infrastructure personnelle hébergée sur mon se
 
 ## 🌐 Dashboard Centralisé
 
-L'ensemble des services de mon infrastructure est accessible et supervisé en temps réel depuis mon tableau de bord **Homepage**[cite: 8] :
-* **URL Dashboard** : `https://homepage.ebroly.fr` (accès restreint via Nginx Proxy Manager Access Lists)[cite: 8]
+L'ensemble des services de mon infrastructure est accessible et supervisé en temps réel depuis mon tableau de bord **Homepage** :
+* **URL Dashboard** : `https://dashboard.ebroly.fr` (accès restreint via Nginx Proxy Manager Access Lists)
 
 ---
 
 ## 🛠️ Stack & Infrastructure
 
 - **OS Serveur** : Ubuntu Server LTS
-- **Réseau & IP** : IP fixe `192.168.1.100`
 - **Reverse Proxy** : Nginx Proxy Manager (Certificats Let's Encrypt Wildcard `*.ebroly.fr`, HTTPS & Access Lists)
 - **Conteneurisation** : Docker & Docker Compose
-- **Dashboard Hub** : Homepage v2 (`port 3050`)
 - **Supervision & Métriques** : Netdata & Uptime Kuma
 
 ---
@@ -26,11 +24,11 @@ L'ensemble des services de mon infrastructure est accessible et supervisé en te
 
 | Catégorie | Service | Description | Sous-domaine / URL | Techno |
 | :--- | :--- | :--- | :--- | :--- |
-| **Dashboard** | **Homepage** | Hub centralisé & métriques en direct | `homepage.ebroly.fr` | Node.js / React |
+| **Dashboard** | **Homepage** | Hub centralisé & métriques en direct | `dashboard.ebroly.fr` | Node.js / React |
 | **Supervision** | **Netdata** | Métriques système (CPU, RAM, Disque) en temps réel | `netdata.ebroly.fr` | Netdata |
 | **Supervision** | **Uptime Kuma** | Monitoring de disponibilité des services | `status.ebroly.fr` | Uptime Kuma |
-| **Administration** | **Portainer** | Interface Web de gestion des conteneurs Docker | `portainer.ebroly.fr` | Portainer CE |
-| **Réseau & DNS** | **AdGuard Home** | Bloqueur de publicités réseau & serveur DNS local | `adguard.ebroly.fr` | AdGuard Home |
+| **Administration** | **Portainer** | Interface Web de gestion des conteneurs Docker | `docker.ebroly.fr` | Portainer CE |
+| **Réseau & DNS** | **AdGuard Home** | Bloqueur de publicités réseau & serveur DNS local | `dns.ebroly.fr` | AdGuard Home |
 | **Proxy** | **Nginx Proxy Manager** | Gestion du routage et des certificats SSL | `npm.ebroly.fr` | Nginx Proxy Manager |
 | **Sécurité** | **Vaultwarden** | Gestionnaire de mots de passe chiffré | `vault.ebroly.fr` | Vaultwarden (Rust Bitwarden) |
 | **Stockage** | **Nextcloud** | Cloud privé & synchronisation de fichiers | `cloud.ebroly.fr` | Nextcloud / MySQL |
