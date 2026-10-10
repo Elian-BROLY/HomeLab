@@ -36,7 +36,7 @@ L'ensemble des services de mon infrastructure est accessible et supervisé en te
 | **Web** | **Portfolio** | Site web personnel & backend de contact | `portfolio.ebroly.fr` | Nginx / Node.js Express |
 | **Web** | **BTS TP Site** | Projet / TP BTS CIEL | `bts.ebroly.fr` | PHP 8.2 / MySQL 8.0 |
 | **Web** | **Love Project** | Mini-projet web | `love.ebroly.fr` | Nginx Alpine |
-| **Gaming** | **Serveur Minecraft** | Serveur de jeu multijoueur | `mc.ebroly.fr` (`25565`) | PaperMC 26.3 / Java |
+| **Gaming** | **Serveur Minecraft** | Serveur de jeu multijoueur | `mc.ebroly.fr` | PaperMC 26.3 / Java |
 
 ---
 
