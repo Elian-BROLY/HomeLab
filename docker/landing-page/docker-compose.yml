@@ -4,6 +4,6 @@ services:
     container_name: landing-page
     restart: unless-stopped
     ports:
-      - '3000:80'
+      - '3099:80'
     volumes:
       - .:/usr/share/nginx/html

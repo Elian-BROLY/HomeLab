@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    image: 'nginx:alpine'
+    container_name: love-eula
+    restart: unless-stopped
+    ports:
+      - '3100:80'
+    volumes:
+      - .:/usr/share/nginx/html

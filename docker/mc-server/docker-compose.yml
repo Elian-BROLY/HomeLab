@@ -1,0 +1,18 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-server
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "26.3"     # Version de mc
+      MEMORY: "4G"          # Memoire alloué
+      MAX_PLAYERS: "10"
+      MOTD: "Homelab Minecraft"
+      ONLINE_MODE: "true"
+      ENABLE_RCON: "true"
+    volumes:
+      - ./data:/data
