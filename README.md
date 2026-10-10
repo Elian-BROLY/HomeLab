@@ -1,6 +1,6 @@
 # Personal Homelab Architecture & Services
 
-Bienvenue sur le dépôt de mon infrastructure personnelle hébergée sur mon serveur Homelab (`192.168.1.100`).
+Bienvenue sur le dépôt de mon infrastructure personnelle hébergée sur mon serveur Homelab.
 
 ---
 
